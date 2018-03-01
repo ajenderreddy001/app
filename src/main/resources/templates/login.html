@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}"/>
+</head>
+<body>
+<form action="/login" method="post" CONTENT="application/x-www-form-urlencoded">
+    <header>Login</header>
+    <label>Username <span>*</span></label>
+    <input name="tname"/>
+    <div class="help">At least 6 character</div>
+    <label>Password <span>*</span></label>
+    <input name="tpass" type="password"/>
+    <div class="help">Use upper and lowercase lettes as well</div>
+    <button type="submit"> Login </button>
+</form>
+</body>
+</html>
