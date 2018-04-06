@@ -8,7 +8,6 @@ import com.example.app.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -19,10 +18,11 @@ public class EmployeeController {
     EmployeeDetailsRepository employeeDetailsRepository;
 
     //@GetMapping(value = "/all")
-    public List<Employee> getAllEmployee()
-    {
+    public List<Employee> getAllEmployee()      {
+
         return employeeRepository.findAll();
     }
+
     //@GetMapping(value = "/find/{name}")
     public Employee findByEmpName(@PathVariable final String name)
     {

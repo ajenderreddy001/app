@@ -6,13 +6,16 @@ import java.time.format.DateTimeFormatter;
 
 @Entity
 public class Attendance {
+
     @Id
     private CompoundKey compoundKey;
+
     private char type;//L Leave
+
     public Attendance() {
     }
-    public Attendance(CompoundKey compoundKey,char type)
-    {
+
+    public Attendance(CompoundKey compoundKey,char type) {
         this.compoundKey=compoundKey;
         this.type=type;
     }
@@ -29,18 +32,22 @@ public class Attendance {
     }*/
 
     public char getType() {
+
         return type;
     }
 
     public void setType(char type) {
+
         this.type = type;
     }
 
     public CompoundKey getCompoundKey() {
+
         return compoundKey;
     }
 
     public void setCompoundKey(CompoundKey compoundKey) {
+
         this.compoundKey = compoundKey;
     }
 }

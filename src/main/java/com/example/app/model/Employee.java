@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Employee {
+public class    Employee {
     @Id
     @GeneratedValue
     private int empId;
